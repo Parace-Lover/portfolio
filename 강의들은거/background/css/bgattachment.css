@@ -1,0 +1,18 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inner{
+    width:1100px;
+    margin: 0 auto;
+    padding: 110px 0;
+}
+
+.pick{
+    width: 100%;
+    background: url('../image/favorite_bg.jpg') no-repeat
+    center/cover fixed;
+}

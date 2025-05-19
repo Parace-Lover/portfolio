@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.jongwoo{
+    width: 80%;
+    height: 500px;}
+
+.jongwoo .swiper-slide {
+    line-height: 500px;
+    text-align: center;
+    background-color: rgb(200,200,200);
+}
+
+.jongwoo .swiper-pagination-bullet{
+    background-color: gray;
+    width:10px;
+    border-radius: 10;
+    opacity: 1;
+}
+.jongwoo .swiper-pagination-bullet-active {
+    background-color: black
+}
+.jongwoo .sw-next {
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    position: absolute;
+    top:40%; right:0;
+    z-index: 9;
+}
+
+.jongwoo .sw-prev {
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    position: absolute;
+    top:40%; left:0;
+    z-index: 9;
+}

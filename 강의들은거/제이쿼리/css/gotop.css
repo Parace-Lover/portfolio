@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.novel{max-width: 30rem;
+margin: 0 auto;}
+
+.gotop
+{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background-color: #333;
+    bottom: 50px;
+    right: 50px;
+    display:none;
+}
+
+.gotop span{
+    width: 10px;
+    height:10px;
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-top: 2px solid #fff;
+    top: 17px; left:15px;
+    transform: rotate(45deg);
+   
+}

@@ -1,0 +1,275 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+color:inherit;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 9;
+}
+header .on{
+    background-color: black;}
+    
+header .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    padding: 10px;
+}
+header button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color:#fff;
+}
+header h1 button{
+    font-size: 2rem;
+    font-weight: bold;
+}
+main{ 
+    width:100%;
+height: 100vh;
+display: flex;
+justify-content:center;
+align-items: center;
+text-align: center;
+background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../image/me.jpg') no-repeat center/cover;
+color:#fff;
+}
+
+main h4{
+    font-size: 2rem;
+}
+main h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+main h2 span::after
+{content: '';
+width: 3px;
+height: 40px;
+display: inline-block;
+background-color: #fff;
+animation: blink 0.7s infinite;}
+
+@keyframes blink{
+    from{opacity: 1;}
+    to {opacity: 0;}
+}
+
+main p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+main .download{
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    width: 200px;
+    margin: 3rem auto;
+    border-radius: 20px;
+}
+main .mouse
+{
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 50px;
+    height: 50px;
+    transform:translateX(-50%) rotate(-45deg);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+}
+section{
+    padding: 5rem 0;
+}
+
+section:nth-child(2n){
+    background-color: #f8f8f8;
+}
+.title
+{margin-bottom: 3rem;}
+.title h4{
+    font-size: 1.4rem;
+    color:orange;
+}
+.title h2{
+    font-size: 3.5rem;
+}
+.about-self::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.about-self .left{
+    width:50%;
+    float: left;
+}
+
+.about-self .left img{
+    width:100%;
+}
+.about-self .right{
+    width:50%;
+    float:right;
+    padding: 0 2rem;
+}
+.about-self .right h3{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-self .right h3 strong{
+    color:orange;
+}
+.about-self .right p {
+    line-height: 2;
+    font-size: 1.2rem;
+}
+.do-me::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+
+.do-me .do-inner{
+    width:30%;
+    float:left;
+    padding: 2rem;
+    margin-right: 5%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.do-me .do-inner:hover{
+    color:#fff;
+    background-color: orange;
+}
+.do-me .do-inner:last-child{
+    margin-right: 0;
+}
+
+.bg{
+    height:600px;
+    background: url('../image/background.jpg') center/cover fixed;
+}
+.portfolio-me::after
+{content: '';
+display: block;
+clear:both;}
+
+.portfolio-me .portfolio-inner {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    padding: 1rem;
+}
+.portfolio-me .portfolio-inner:nth-child(3n){
+    margin-right: 0;
+}
+
+.portfolio-me .portfolio-inner img {
+    width:100%;
+    display: block;
+}
+
+.portfolio-me .portfolio-inner strong{
+    color:orange;
+    margin: 0.5rem 0;
+    display:block;
+}
+.portfolio-me .portfolio-inner h3 {
+    font-size: 1.7rem;
+
+}
+
+.contact-me .left{
+    width: 30%;
+    float: left;
+}
+
+.contact-me .left .card{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:  1.5rem;
+}
+
+.contact-me .right{
+    width: 65%;
+    float: left; 
+    margin-left:5%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.contact-me .right .form-group{
+    margin-bottom: 1.2rem;
+
+}
+
+.contact-me .right .form-group label{
+    display:block;
+    margin-bottom: 1rem;
+}
+
+.contact-me .right .form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.contact-me .right .form-group input:focus{
+    border: 1px solid skyblue;
+}
+
+
+.contact-me .right .form-group textarea{
+    width:100%;
+    padding:1rem;
+    border:1px solid #ccc;
+    outline:none;
+    resize:none;
+}
+.contact-me .right .form-group textarea:focus {
+    border: 1px solid skyblue;
+}
+
+.contact-me .right form > input{
+    width: 100%;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+}

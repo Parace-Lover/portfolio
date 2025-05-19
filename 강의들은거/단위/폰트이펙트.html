@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 40px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        p::after {
+        content: '푸우우우';
+        color:aqua;
+        position: absolute;
+        top: 0; left: 0;
+        width: 0;
+        overflow: hidden;
+        transition: all 1s;
+        white-space: nowrap;
+        }
+
+        p:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p>푸우우우</p>
+</body>
+</html>

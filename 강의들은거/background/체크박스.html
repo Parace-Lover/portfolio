@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .center {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+        input{
+            position: absolute;
+            left: -5000%;
+        }
+        label em {
+            display:inline-block;
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+            background: url('이미지/bg_chkbox.gif') no-repeat 0 0; 
+            vertical-align: middle;
+        }
+        input:checked + label em {
+            background-position: -38px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <em></em>체크합니다
+            </label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+ul{
+    list-style:none;}
+li{
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+li span{
+    display:block;
+    width:400px;
+    line-height: 200px;
+    background-color: rgba(0,0,0, 0.8);
+    color:white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left:400px;
+    transition: all .3s;
+}
+li:hover span {
+    left:0
+}
+    </style>
+</head>
+<body>
+    <ul>
+         <li>
+            <img src="http://www.dummyimage.com/400X200/f00" alt="">
+            <span>이미지</span>
+        </li>
+        <li>
+            <img src="http://www.dummyimage.com/400X200/0f0" alt="">
+            <span>이미지</span>
+        </li>
+        <li>
+            <img src="http://www.dummyimage.com/400X200/00f" alt="">
+            <span>이미지</span>
+        </li>
+    </ul>
+</body>
+</html>

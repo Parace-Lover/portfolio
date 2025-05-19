@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html {
+    font-size: 18px;
+}
+
+/* em : 부모의 영향 */
+.gfa {
+    font-size: 2em;
+    border: 2px solid red;
+}
+.fa {
+    font-size: 2em;
+    border: 2px solid blue;
+}
+.son {
+     font-size: 2em;
+     border: 2px solid green
+}
+
+/* rem : html 영향 */
+.gfar {
+    font-size: 2rem;
+    border: 2px solid red;
+}
+.far {
+    font-size: 2rem;
+    border: 2px solid blue;
+}
+.sonr {
+     font-size: 2rem;
+     border: 2px solid green
+}

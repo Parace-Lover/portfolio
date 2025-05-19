@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa, .bb, .cc {
+            color:green;
+        }
+        section p {
+            color:coral;
+        }
+        .box > p {
+            color:blue;
+        }
+        h1 + h2 {
+            color:azure
+        }
+    </style>
+</head>
+<body>
+    <!-- 그룹 선택자 -->
+     <p class="aa">aa</p>
+     <p class="bb">bb</p>
+     <p class="cc">cc</p>
+    <!-- 하위 선택자 : 한칸 띄우고 작성 -->
+     <secion>
+        <p>spring</p>
+        <p>summer</p>
+        <p>fall</p>
+        </secion>
+        <p>winter</p>
+<!-- 자식 선택자 : > 작성 -->
+        <div class="box">
+            <p>안녕하세요1</p>
+            <div>
+                <p>안녕하세요2</p>
+            </div>
+            <p>안녕하세요3</p>
+        </div>
+
+        <h1>h1입니다</h1>
+        <h2>h2입니다</h2>
+        <h2>h3입니다</h2>
+        <h3>일반형제선택지</h3>
+        <h4>물결로 표시</h4>
+        <h4>합니다~~~</h4>
+        <h4></h4>
+
+         
+</body>
+</html>

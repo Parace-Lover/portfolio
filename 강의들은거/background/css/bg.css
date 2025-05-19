@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.bg {
+    width: 1000px;
+    height: 600px;
+    background-image: url('../이미지/snowman.jpg');
+    background-position: right bottom;
+}
+
+.pooh {
+    width: 500px;
+    height: 500px;
+    background-image: url('../이미지/pooh1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgs {
+    width: 1000px;
+    height: 600px;
+    background: #999 url('../이미지/snowman2.jpg') no-repeat center/cover;
+}

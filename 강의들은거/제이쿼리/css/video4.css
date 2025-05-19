@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;}
+    
+.gallery
+{width: 100%;
+height: 100vh;
+background-color: pink;
+display: flex;
+position: relative;}
+
+.gallery-header
+{
+    width: 20%;
+    height: 100%;
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-collection {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    padding-top: 15vh;
+}
+.gallery-collection li{
+    flex: 1;
+    padding: 70px 40px 100px;
+    opacity: 0.6;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery-collection li::before{
+    content:'';
+    width: 80%;
+    height: 95%;
+    position: absolute;
+    background-color:aliceblue;
+    top: 0; left: -200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.gallery-collection li:hover::before
+{
+    left: 0;
+ opacity: 1;
+ visibility: visible;
+ 
+}
+.gallery-collection li:hover{
+    flex: 1.5;
+    opacity: 1;
+}
+.gallery-collection li .inner h3
+{font-size: 2rem;
+    color:#fff;
+padding-top: 70px;
+margin-bottom: 40px;
+transition: all 0.5s;
+}
+.gallery-collection li .inner h3::after{
+   content: '';
+   display: block;
+   width:40px;
+   height:2px;
+   background-color: black;
+   margin-top: 20px;
+   transition: all 0.5s;
+}
+
+.gallery-collection li:hover .inner h3::after{
+    background-color: yellow;
+    width: 120px;
+ }
+
+.gallery-collection li:hover .inner h3{
+    font-size:4rem;
+    padding-top: 0;
+}
+
+.gallery-collection li .inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+}
+.gallery-collection li .inner h3{
+    font-size: 2rem;
+color: #fff;
+padding-top: 70px;
+margin-bottom: 40px;}
+
+.gallery-collection li .inner p{
+    color: #888
+}
+
+.gallery-collection li .inner figure{
+    width: 100%;
+    height:30%;
+
+}
+.gallery-collection li .inner figure video {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.popup{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    padding: 20vh 7vw 14vh 20vw;
+    background-color: #222;
+    top: 0; left: -100%;
+    display: flex;
+    justify-content: space-between;
+}
+.popup.on {
+    opacity: 1;
+    left:0;
+}
+.popup .txt {
+    width: 25%;
+    height: 100%;
+}
+
+.popup .txt h2 {
+    font-size: 5rem;
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.popup .txt p{
+    font-size: 2rem;
+    margin-bottom: 60px;
+    color: #777;
+}
+.popup .txt button
+{font-size:  2rem;
+color: yellow;
+background-color: transparent;
+border: none;
+text-transform: uppercase;
+cursor: pointer;}
+
+.popup figure{
+    width: 70%;
+}
+
+.popup figure video{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
